@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
+
+apply plugin:'java'
+
+// This script was used to upload files to bintray.
+// Note: please put it on the bottm.
+apply from: 'bintray.gradle'
