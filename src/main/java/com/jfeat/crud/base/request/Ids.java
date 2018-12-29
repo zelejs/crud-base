@@ -1,4 +1,4 @@
-package com.jfeat.crud.base.tips;
+package com.jfeat.crud.base.request;
 
 import java.util.List;
 

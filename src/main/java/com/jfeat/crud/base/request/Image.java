@@ -1,9 +1,7 @@
-package com.jfeat.crud.base.tips;
+package com.jfeat.crud.base.request;
 
 /**
- * 接收前端上传图片
- * @author jackyhuang
- * @date 2018/8/22
+ * Created by vincenthuang on 2018/12/29.
  */
 public class Image {
     private String url;
