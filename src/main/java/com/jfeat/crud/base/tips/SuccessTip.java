@@ -26,7 +26,7 @@ public class SuccessTip extends Tip {
 
 	public SuccessTip() {
 		super.code = 200;
-		super.message = "操作成功";
+		super.message = "Success";
 	}
 
 	public static SuccessTip create() {
