@@ -78,6 +78,9 @@ public enum BusinessCode {
     /// 4063
     FileNotFound(CodeBase.friendlyCode + 63, "找不到文件"),
 
+    /// 4080
+    VersionInconsistency(CodeBase.friendlyCode + 80, "数据版本不一致"),
+
     /**
      * CRUD Error Code
      */
