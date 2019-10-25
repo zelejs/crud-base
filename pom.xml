@@ -11,6 +11,13 @@
     <name>CRUD-Base</name>
     <description>Sprint-Boot CRUD Base Library</description>
 
+    <parent>
+        <groupId>com.jfeat</groupId>
+        <artifactId>sb-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath/>
+    </parent>
+
     <build>
         <plugins>
             <plugin>
@@ -21,6 +28,10 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
