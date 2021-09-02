@@ -95,7 +95,21 @@ public enum BusinessCode {
     CRUD_DELETE_ASSOCIATED_MASTER(CRUD_GENERAL_ERROR.friendlyCode + 8, "[CRUD]尝试删除存在关联的实体"),
     CRUD_MASTER_NOT_EXISTS(CRUD_GENERAL_ERROR.friendlyCode + 9, "[CRUD]主表项不存在"),
     CRUD_PEER_KEY_NOT_UNIQUE(CRUD_GENERAL_ERROR.friendlyCode + 10, "[CRUD]关联关键字非唯一"),
-    CRUD_DUPLICATE_UNIQUE_FIELD(CRUD_GENERAL_ERROR.friendlyCode + 11, "[CRUD]唯一字段重复");
+    CRUD_DUPLICATE_UNIQUE_FIELD(CRUD_GENERAL_ERROR.friendlyCode + 11, "[CRUD]唯一字段重复"),
+
+
+    /**
+     * 系统错误
+     */
+    SYSTEM_GENERAL_ERROR(CodeBase.friendlyCode + 500, "系统错误"),
+    SYSTEM_LOGIC_ERROR(SYSTEM_GENERAL_ERROR.friendlyCode + 1, "系统逻辑错误"),
+
+
+
+    /**
+     * Unknown error
+     */
+    UNKNOWN_ERROR(CodeBase.friendlyCode + 1000, "未知错误");
 
     /**
      *  enum Code
