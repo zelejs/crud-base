@@ -27,6 +27,7 @@ public enum BusinessCode {
     DeleteNotEmptyOne(CodeBase.friendlyCode + 9, "尝试删除非空项"),
     /// 4010
     ReservedCode10(CodeBase.friendlyCode + 10, "预留业务错误"),
+    PassworkNotExist(CodeBase.friendlyCode + 10, "错误密码为空"),
     /// 4011
     DatabaseInsertError(CodeBase.friendlyCode + 11, "数据库插入错误"),
     /// 4012
