@@ -43,11 +43,20 @@ public class ErrorTip extends Tip {
         this.message = businessCode.getMessage();
     }
 
+    public ErrorTip(BusinessCode businessCode, String message) {
+        this.code = businessCode.getCode();
+        this.message = message;
+    }
+
     public static ErrorTip create(int code, String message) {
         return new ErrorTip(code ,message);
     }
 
     public static ErrorTip create(BusinessCode businessCode) {
         return new ErrorTip(businessCode);
+    }
+
+    public static ErrorTip create(BusinessCode businessCode, String message) {
+        return new ErrorTip(businessCode, message);
     }
 }
