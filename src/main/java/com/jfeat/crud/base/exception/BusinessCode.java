@@ -69,6 +69,8 @@ public enum BusinessCode {
     LoginFailure(CodeBase.friendlyCode + 46, "登录失败"),
     /// 4047
     InvalidToken(CodeBase.friendlyCode + 47, "非法验证码"),
+    /// 4048
+    InvalidPasswordPolicy(CodeBase.friendlyCode + 48, "无效的密码策略"),
 
     /// 4060
     GeneralIOError(CodeBase.friendlyCode + 60, "文件操作错误"),
