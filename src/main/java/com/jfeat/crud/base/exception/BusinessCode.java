@@ -71,6 +71,8 @@ public enum BusinessCode {
     InvalidToken(CodeBase.friendlyCode + 47, "非法验证码"),
     /// 4048
     InvalidPasswordPolicy(CodeBase.friendlyCode + 48, "无效的密码策略"),
+    /// 4049
+    ExpiredTime(CodeBase.friendlyCode + 49, "过期的时间"),
 
     /// 4060
     GeneralIOError(CodeBase.friendlyCode + 60, "文件操作错误"),
