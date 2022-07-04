@@ -5,7 +5,7 @@ import java.util.Date;
 public class DateTimeKit {
 
     //    最大显示3天 1小时*24*3
-    public static final long MAX_TIME = 3600 * 24 * 3;
+    public static final long MAX_TIME = 3600 * 24 * 4;
 
     public static String toTimeline(Date time){
 
