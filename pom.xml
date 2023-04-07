@@ -19,6 +19,15 @@
         <relativePath/>
     </parent>
 
+    <dependencies>
+        <!--        md5-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-crypto-hash</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
