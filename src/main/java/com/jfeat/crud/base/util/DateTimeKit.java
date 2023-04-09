@@ -2,6 +2,7 @@ package com.jfeat.crud.base.util;
 
 import java.util.Date;
 
+@Deprecated
 public class DateTimeKit {
 
     //    最大显示3天 1小时*24*3
