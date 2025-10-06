@@ -413,6 +413,33 @@ public class StrKit {
 		return str.toLowerCase().contains(testStr.toLowerCase());
 	}
 
+
+	/**
+	 * 从字符串的首字母开始获取包含特定子字符串的索引，忽略大小写
+	 * @param str 被检测字符串
+	 * @param sub 被测试是否包含的字符串
+	 * @return 包含的索引，未包含返回-1
+	 */
+	public static int indexOfIgnoreCase(String str, String sub){
+		if (str == null || sub == null) {
+			return -1;
+		}
+		return str.toLowerCase().indexOf(sub.toLowerCase());
+	}
+
+	/**
+	 * 从字符串的最后一个字符开始获取包含特定子字符串的索引，忽略大小写
+	 * @param str 被检测字符串
+	 * @param sub 被测试是否包含的字符串
+	 * @return 包含的索引，未包含返回-1
+	 */
+	public static int lastIndexOfIgnoreCase(String str, String sub){
+		if (str == null || sub == null) {
+			return -1;
+		}
+		return str.toLowerCase().lastIndexOf(sub.toLowerCase());
+	}
+
 	/**
 	 * 获得set或get方法对应的标准属性名<br/>
 	 * 例如：setName 返回 name
