@@ -26,7 +26,7 @@ public enum BusinessCode {
     /// 4009
     DeleteNotEmptyOne(CodeBase.friendlyCode + 9, "尝试删除非空项"),
     /// 4010
-    ReservedCode10(CodeBase.friendlyCode + 10, "预留业务错误"),
+    // ReservedCode10(CodeBase.friendlyCode + 10, "预留业务错误"),
     PassworkNotExist(CodeBase.friendlyCode + 10, "错误密码为空"),
     /// 4011
     DatabaseInsertError(CodeBase.friendlyCode + 11, "数据库插入错误"),
@@ -36,6 +36,10 @@ public enum BusinessCode {
     DatabaseDeleteError(CodeBase.friendlyCode + 13, "数据库删除错误"),
     /// 4014
     ThirdPartError(CodeBase.friendlyCode + 14, "调用第三方出错"),
+    // 4015
+    RpcFailure(CodeBase.friendlyCode + 15, "远程调用失败"),
+    // 4016
+    LoginExpired(CodeBase.friendlyCode + 16, "登录过期"),
 
     /// 4020
     BadRequest(CodeBase.friendlyCode + 20, "请求参数错误"),
@@ -85,6 +89,7 @@ public enum BusinessCode {
 
     /// 4080
     VersionInconsistency(CodeBase.friendlyCode + 80, "数据版本不一致"),
+
 
     /**
      * CRUD Error Code
