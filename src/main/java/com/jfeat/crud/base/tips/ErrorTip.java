@@ -15,22 +15,24 @@ import java.util.Map;
  */
 public class ErrorTip extends Tip {
 
-    private List<Map<String, String>> errors = new ArrayList<>();
+    // private List<Map<String, String>> errors = new ArrayList<>();
+    private Map<String, String> errors = new HashMap<>();
 
     public ErrorTip add(String field, String error) {
-        Map<String, String> map = new HashMap<>();
-        map.put(field, error);
-        errors.add(map);
+        // Map<String, String> map = new HashMap<>();
+        // map.put(field, error);
+        // errors.add(map);
+        errors.put(field, error);
         return this;
     }
 
-    public List<Map<String, String>> getErrors() {
+    public Map<String, String> getErrors() {
         return errors;
     }
 
-    public void setErrors(List<Map<String, String>> errors) {
-        this.errors = errors;
-    }
+    // public void setErrors(List<Map<String, String>> errors) {
+    //     this.errors = errors;
+    // }
 
     public ErrorTip(int code, String message) {
         super();
