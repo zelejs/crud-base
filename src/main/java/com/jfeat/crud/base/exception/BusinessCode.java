@@ -102,6 +102,11 @@ public enum BusinessCode {
     CRUD_PEER_KEY_NOT_UNIQUE(CRUD_GENERAL_ERROR.friendlyCode + 10, "[CRUD]关联关键字非唯一"),
     CRUD_DUPLICATE_UNIQUE_FIELD(CRUD_GENERAL_ERROR.friendlyCode + 11, "[CRUD]唯一字段重复"),
 
+    /**
+     * 设备管控业务相关错误码
+     */
+    MDM_GENERAL_ERROR(CodeBase.friendlyCode + 420, "[MDM] General error !!"),
+
 
     /**
      * 系统错误
