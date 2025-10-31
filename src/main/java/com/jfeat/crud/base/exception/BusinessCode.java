@@ -48,7 +48,7 @@ public enum BusinessCode {
     /// 4022
     EmptyNotAllowed(CodeBase.friendlyCode + 22, "不允许空值"),
     /// 4023
-    Reserved(CodeBase.friendlyCode + 23, "预留"),
+    NotValidated(CodeBase.friendlyCode + 23, "未校验"),
     /// 4024
     Reserved2(CodeBase.friendlyCode + 24, "预留"),
     /// 4025
