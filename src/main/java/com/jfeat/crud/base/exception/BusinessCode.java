@@ -110,7 +110,8 @@ public enum BusinessCode {
     /**
      * 设备管控业务相关错误码
      */
-    MDM_GENERAL_ERROR(CodeBase.friendlyCode + 420, "[MDM] General error !!"),
+    MDM_GENERAL_ERROR(CodeBase.friendlyCode + 420, "[MDM] 一般性错误"),
+    MDM_NOT_EXISTS(MDM_GENERAL_ERROR.friendlyCode + 1, "[MDM] 数据不存在"),
 
 
     /**
@@ -118,7 +119,7 @@ public enum BusinessCode {
      */
     SYSTEM_GENERAL_ERROR(CodeBase.friendlyCode + 500, "系统错误"),
     SYSTEM_LOGIC_ERROR(SYSTEM_GENERAL_ERROR.friendlyCode + 1, "系统逻辑错误"),
-
+    SYSTEM_DATA_NOT_EXISTS(SYSTEM_GENERAL_ERROR.friendlyCode + 2, "数据不存在"),
 
 
     /**
