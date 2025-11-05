@@ -40,6 +40,9 @@ public enum BusinessCode {
     RpcFailure(CodeBase.friendlyCode + 15, "远程调用失败"),
     // 4016
     LoginExpired(CodeBase.friendlyCode + 16, "登录过期"),
+    // 4017
+    DataNotExists(CodeBase.friendlyCode + 17, "数据不存在"),
+
 
     /// 4020
     BadRequest(CodeBase.friendlyCode + 20, "请求参数错误"),
@@ -50,7 +53,7 @@ public enum BusinessCode {
     /// 4023
     NotValidated(CodeBase.friendlyCode + 23, "未校验"),
     /// 4024
-    Reserved2(CodeBase.friendlyCode + 24, "预留"),
+    VerifyFailed(CodeBase.friendlyCode + 24, "验证失败"),
     /// 4025
     SyntaxError(CodeBase.friendlyCode + 25, "语法错误"),
     /// 4026
@@ -108,18 +111,10 @@ public enum BusinessCode {
     CRUD_DUPLICATE_UNIQUE_FIELD(CRUD_GENERAL_ERROR.friendlyCode + 11, "[CRUD]唯一字段重复"),
 
     /**
-     * 设备管控业务相关错误码
-     */
-    MDM_GENERAL_ERROR(CodeBase.friendlyCode + 420, "[MDM] 一般性错误"),
-    MDM_NOT_EXISTS(MDM_GENERAL_ERROR.friendlyCode + 1, "[MDM] 数据不存在"),
-
-
-    /**
      * 系统错误
      */
     SYSTEM_GENERAL_ERROR(CodeBase.friendlyCode + 500, "系统错误"),
     SYSTEM_LOGIC_ERROR(SYSTEM_GENERAL_ERROR.friendlyCode + 1, "系统逻辑错误"),
-    SYSTEM_DATA_NOT_EXISTS(SYSTEM_GENERAL_ERROR.friendlyCode + 2, "数据不存在"),
 
 
     /**
